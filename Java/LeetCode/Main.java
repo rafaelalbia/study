@@ -7,7 +7,7 @@ import java.util.Stack;
 
 class Solution {
 
-    // 1. Two Sum
+    // 1. Two Sum (Easy)
     public int[] twoSum(int[] numbers, int target) {
         HashMap<Integer, Integer> refined = new HashMap<>();
 
@@ -22,7 +22,7 @@ class Solution {
         return new int[] {-1, -1};
     }
 
-    // 9. Palindrome Number
+    // 9. Palindrome Number (Easy)
     public boolean isPalindrome(int number) {
         if (number < 0) return false;
 
@@ -40,7 +40,7 @@ class Solution {
         }
     }
 
-    // 13. Roman to Integer
+    // 13. Roman to Integer (Easy)
     public int romanToInt(String value) {
         Map<Character, Integer> table = new HashMap<Character, Integer>() {{
             put('I', 1);
@@ -65,7 +65,7 @@ class Solution {
         return result;
     }
 
-    // 14. Longest Common Prefix
+    // 14. Longest Common Prefix (Easy)
     public String longestCommonPrefix(String[] array) {
         String result = array[0];
 
@@ -78,7 +78,7 @@ class Solution {
         return result;
     }
 
-    // 20. Valid Parentheses
+    // 20. Valid Parentheses (Easy)
     public boolean isValid(String value) {
         Stack<Character> stack = new Stack<>();
         char[] open = new char[] {'(', '[', '{'};
@@ -112,19 +112,19 @@ public class Main {
 
         Solution solution = new Solution();
 
-        // 1. Two Sum
+        // 1. Two Sum (Easy)
         solution.twoSum(null, 0);
 
-        // 9. Palindrome Number
+        // 9. Palindrome Number (Easy)
         solution.isPalindrome(0);
 
-        // 13. Roman to Integer
+        // 13. Roman to Integer (Easy)
         solution.romanToInt(null);
 
-        // 14. Longest Common Prefix
+        // 14. Longest Common Prefix (Easy)
         solution.longestCommonPrefix(null);
 
-        // 20. Valid Parentheses
+        // 20. Valid Parentheses (Easy)
         solution.isValid(null);
 
     }
